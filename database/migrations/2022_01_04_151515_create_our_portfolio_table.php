@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSendUsMessageTable extends Migration
+class CreateOurPortfolioTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateSendUsMessageTable extends Migration
      */
     public function up()
     {
-        Schema::create('send_us_message', function (Blueprint $table) {
+        Schema::create('our_portfolio', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email');
-            $table->text('message');
+            $table->string('image');
+            $table->string('project_title');
+            $table->string('category');
+            $table->text('description');
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateSendUsMessageTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('send_us_message');
+        Schema::dropIfExists('our_portfolio');
     }
 }
