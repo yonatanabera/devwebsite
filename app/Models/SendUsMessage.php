@@ -9,7 +9,7 @@ class SendUsMessage extends Model
 {
     use HasFactory;
 
-    private $table='send_us_message';
+    protected $table='send_us_message';
 
     protected $fillable=[
         'name',

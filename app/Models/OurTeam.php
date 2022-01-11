@@ -9,7 +9,7 @@ class OurTeam extends Model
 {
     use HasFactory;
 
-    private $table='our_team';
+    protected $table='our_team';
 
 
     protected $fillable=[

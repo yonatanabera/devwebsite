@@ -9,7 +9,7 @@ class OurClients extends Model
 {
     use HasFactory;
 
-    private $table='our_clients';
+    protected $table='our_clients';
 
 
     protected $fillable=[

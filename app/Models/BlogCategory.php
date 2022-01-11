@@ -9,7 +9,7 @@ class BlogCategory extends Model
 {
     use HasFactory;
 
-    private $table='blog_categories';
+    protected $table='blog_categories';
 
     protected $fillable=[
         'category_name'
